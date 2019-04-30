@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'binding-demo';
-
+  rating=3.2;
+  starWidth= this.rating*(75/5) ;
+  starColor= 'red';
   performAction(): void{
     alert("Button is Clicked...");
     this.title="Binding-Demo in Angular";
