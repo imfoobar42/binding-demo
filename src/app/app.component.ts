@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'binding-demo';
+
+  performAction(): void{
+    alert("Button is Clicked...");
+    this.title="Binding-Demo in Angular";
+  }
 }
