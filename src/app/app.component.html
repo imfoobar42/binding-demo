@@ -27,3 +27,13 @@
 <br>
 <label >Enter Name</label>
 <input type="text" name="username" required [class.invalid]="true"/>
+<br>
+<br><br>
+
+//Attributes are html attribute,Properties are Dom Properties
+<label >Name:</label>
+<input type="text" name="username" [attr.value]="customerName" id="user_name"/>
+<br>
+<br>
+
+<div [innerHTML]="title"></div>
