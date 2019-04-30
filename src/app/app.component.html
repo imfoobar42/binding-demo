@@ -1,3 +1,12 @@
+
+<head>
+  <style>
+      .invalid{
+        border: 1px solid red;
+      }
+    </style>
+</head>
+
 <h2>{{title}} </h2>
 <br>
 <button type="button" (click)="performAction()" ><h2>Click Me</h2></button>
@@ -13,3 +22,8 @@
       <span class="fa fa-star"></span>
     </div>
 </div>
+
+<br>
+<br>
+<label >Enter Name</label>
+<input type="text" name="username" required [class.invalid]="true"/>
