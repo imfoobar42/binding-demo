@@ -15,4 +15,5 @@ export class AppComponent {
     alert("Button is Clicked...");
     this.title="Binding-Demo in Angular";
   }
+
 }

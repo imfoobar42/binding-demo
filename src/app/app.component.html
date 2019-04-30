@@ -30,10 +30,18 @@
 <br>
 <br><br>
 
-//Attributes are html attribute,Properties are Dom Properties
+<!-- Attributes are html attribute,Properties are Dom Properties -->
 <label >Name:</label>
 <input type="text" name="username" [attr.value]="customerName" id="user_name"/>
 <br>
 <br>
 
 <div [innerHTML]="title"></div>
+
+<!-- 2-way data binding -->
+<br>
+<br>
+<label >Enter Customer Name</label>
+<input type="text" name="customer_name" [(ngModel)]="customerName"/>
+<br>
+{{customerName}}
